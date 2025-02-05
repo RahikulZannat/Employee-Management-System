@@ -8,7 +8,7 @@ const Users = () => {
 
   return (
     <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-      <div className="w-50 bg-white rounded p-3">
+      <div className="w-75 bg-white rounded p-3">
         <Link to="/create" className="btn btn-success mb-3">Add User</Link>
         <table className="table">
           <thead>
@@ -26,7 +26,10 @@ const Users = () => {
                        <td>{user.Name}</td>
                        <td>{user.Email}</td>
                        <td>{user.Age}</td>
-                       <td><button>Edit</button><button>Delete</button></td>
+                       <td>
+                       <Link to="/update" className="btn btn-success mb-3">Update</Link>
+                            <button className="btn btn-success ms-1 mb-3">Delete</button>
+                       </td>
                    </tr>
 
                })
