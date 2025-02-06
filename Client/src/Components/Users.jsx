@@ -34,7 +34,7 @@ const Users = () => {
                        <td>{user.email}</td>
                        <td>{user.age}</td>
                        <td>
-                       <Link to="/update" className="btn btn-success mb-3">Update</Link>
+                       <Link to={`/update/${user._id}`} className="btn btn-success mb-3">Update</Link>
                             <button className="btn btn-danger ms-1 mb-3">Delete</button>
                        </td>
                    </tr>
